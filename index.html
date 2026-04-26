@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelerA Jus & Sop Buah Segar Jaya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <i class="fas fa-lemon"></i>
+            <span>SelerA Jaya</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-lemon"></i>
+                    <span>SelerA Jaya</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Pesan</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">SelerA</span><br>
+                Jus & Sop Buah<br><span class="jaya">Segar Jaya</span>
+            </h1>
+            <p class="hero-subtitle">Segarkan harimu dengan minuman buah segar terbaik!</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Lihat Menu <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Pesan Sekarang <i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Menu Pilihan Kami</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="jus">Jus Segar</button>
+                <button class="tab-btn" data-tab="sop">Sop Buah</button>
+            </div>
+            
+            <div class="menu-grid" id="jus-tab">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&fit=crop" alt="Jus Jeruk" loading="lazy">
+                    <div class="menu-info">
+                        <h4>Jus Jeruk Premium</h4>
+                        <p>Jeruk segar pilihan, kaya vitamin C</p>
+                        <div class="price">Rp 15.000</div>
+                        <button class="order-btn">Pesan <i class="fab fa-whatsapp"></i></button>
+                    </div>
+                </div>
+                <!-- Tambah menu lainnya... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Tentang SelerA Jaya</h2>
+                    <p>Kami berkomitmen menyajikan jus dan sop buah segar dengan bahan terbaik. Setiap gelas dibuat fresh untuk menjaga nutrisi dan rasa maksimal.</p>
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>100% Natural</h4>
+                            <p>Buah segar tanpa pengawet</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h4>Fresh Order</h4>
+                            <p>Dibuat saat dipesan</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h4>Delivery</h4>
+                            <p>Gratis antar area sekitar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&fit=crop" alt="About" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Pesan Sekarang</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <h4>Lokasi</h4>
+                        <p>Jl. Raya Pasar Baru No. 123<br>Kecamatan Tebet, Jakarta Selatan</p>
+                    </div>
+                    <div class="contact-card highlight">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                        <h4>WhatsApp</h4>
+                        <p><strong>0812-3456-7890</strong><br>Klik untuk chat langsung</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock fa-2x"></i>
+                        <h4>Jam Operasional</h4>
+                        <p>Senin-Minggu<br>08:00 - 22:00 WIB</p>
+                    </div>
+                </div>
+                <div class="order-form">
+                    <h3>Form Pemesanan Cepat</h3>
+                    <form id="orderForm">
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="tel" placeholder="No. WhatsApp" required>
+                        <input type="text" placeholder="Pesanan (contoh: Jus Jeruk x2)" required>
+                        <textarea placeholder="Catatan tambahan (opsional)"></textarea>
+                        <button type="submit" class="btn btn-primary full-width">Kirim Pesanan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-lemon"></i>
+                    <span>SelerA Jus & Sop Buah Segar Jaya</span>
+                </div>
+                <p>&copy; 2024 SelerA Jaya. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
